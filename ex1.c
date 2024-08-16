@@ -14,11 +14,9 @@ int main()
 
     printf("Digite a String 1: ");
     fgets(st1, MAX, stdin);
-    st1[strcspn(st1, "\n")] = '\0'; // Remove o caractere de nova linha
 
     printf("Digite a String 2: ");
     fgets(st2, MAX, stdin);
-    st2[strcspn(st2, "\n")] = '\0'; // Remove o caractere de nova linha
 
     printf("%d\n", ocorrencia(st1, st2));
 
