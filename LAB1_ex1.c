@@ -29,13 +29,14 @@ int main()
 int ocorrencia(char* s1, char* s2)
 {
     
-    int len1 = strlen(s1);
-    int len2 = strlen(s2);
+    int len1 = strlen(s1) - 1;
+    int len2 = strlen(s2) - 1;
+    
 
     for (int i = 0; i <= len1 - len2; i++) 
     {
         int j;
-        for (j = 0; j < len2; j++)
+        for (j = 0; j < len2; j++) 
         {
             if (tolower(s1[i + j]) != tolower(s2[j]))
             {
