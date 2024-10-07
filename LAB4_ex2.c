@@ -3,12 +3,6 @@
 
 int main(int argc, char* argv[])
 {
-    if(!(argc < 3))
-    {
-        printf("Erro no terminal.");
-        return 1;
-    }
-
     FILE *pentrada;
     FILE *psaida;
     int c;
